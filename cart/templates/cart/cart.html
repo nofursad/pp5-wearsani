@@ -37,8 +37,13 @@
                     {% for item in cart_items %}
                     <tr>
                         <td class="p-3 w-25">
-                            <img src="{{ item.product.image.url }}" alt=""
-                                class="img-fluid rounded">
+                            {% if item.product.image %}
+                                <img src="{{ item.product.image.url }}" alt=""
+                                    class="img-fluid rounded">
+                            {% else %}
+                                <img src="{{ MEDIA_URL }}noimage.png" alt=""
+                                    class="img-fluid rounded">
+                            {% endif %}
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -104,7 +109,7 @@
                             {% if free_delivery_delta > 0 %}
                             <p class="mb-1 text-danger">
                                 You could get free delivery by spending just
-                                <strong>${{ free_delivery_delta }}</strong> more!
+                                <strong>£{{ free_delivery_delta }}</strong> more!
                             </p>
                             {% endif %}
                         </td>
@@ -118,7 +123,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black rounded-0 btn-lg">
+                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
