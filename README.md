@@ -12,11 +12,10 @@ Admin users can manage the lists of products that they sell, this includes being
 
 The Web Marketing strategies used by the project are :
 - Organic Social - through facebook
-- Email - through a newletter subscription managed via Mailchimp
 
 The structure and purpose of the WearSani project is based on the Code Institute Boutique Ado walkthrough example application.
 
-<!-- ![Mockup](Sample image of index page) -->
+![Mockup](documentation/am_i_responsive.png)
 
 ## Index – Table of Contents
 * [User Experience (UX)](#user-experience-ux) 
@@ -244,12 +243,28 @@ The Epic, User Stories and Kanban board can be accessed here : [WearSani Agile T
 
 - [HTML Validator](https://validator.w3.org/)
 
+  - As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator (link shown above). HTML for the Django admin site pages was not edited so has not been validated here. The Signup, Login and Logout pages from Django allauth were customized and so have been validated, with results below.  
+
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-### Manual Testing Test Cases and Results 
 
+- [Javascript Validator](https://jshint.com/)
+
+  
+- [Python Validator](http://pep8online.com/)
+
+### Browser Compatibility
+
+- Chrome DevTools was used to test the responsiveness of the application on different screen sizes.  In addition, testing has been carried out on the following browsers :
+    - Google Chrome version 9.0.4606.81 (64-bit)
+    - Firefox version 93.0 (64-bit)
+    - Microsoft Edge 94.0.992.38 (64-bit)
+ 
+    
 ### Known bugs
+
+- Currently no known bugs.
 
 ## Deployment 
 
@@ -370,7 +385,7 @@ Detailed below are instructions on how to clone this project repository and the 
 			if 'USE_AWS' in os.environ:
 				# Bucket Config
 				AWS_STORAGE_BUCKET_NAME = 'pp5-wearsani'    <------ bucket name and region
-				AWS_S3_REGION_NAME = 'eu-west-1'
+				AWS_S3_REGION_NAME = 'eu-west-2'
 				AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 				AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
@@ -396,9 +411,17 @@ Detailed below are instructions on how to clone this project repository and the 
 ## Credits 
 
 ### Code 
+- Much of the coding and testing relies heavily on information in the "Boutique Ado" walkthrough in the Code Institue Building an E-Commerce Platform module. 
+- Code to handle images and avoid distortion was based on information found here : [Image Scaling](https://stackoverflow.com/questions/5369301/css-image-scaling-to-fit-within-area-not-distort)
+- Code to set max-width for website was based on information found here : [Max Width Screen](https://stackoverflow.com/questions/9730263/setting-max-width-for-body-using-bootstrap)
 
 ### Content 
 
 ### Media 
+- The Lato font used was imported from [Google Fonts](https://fonts.google.com/)
+- Fontawesome was used for icons, including icons for like, comments, user - [Font Awesome](https://fontawesome.com/)
+- The images used for the product were taken from [Wearsani's Facebook Page](https://www.facebook.com/WearSANI). 
 
 ### Acknowledgments
+
+- Thank you to my mentor Brian Macharia for all of his guidance, help and feedback throughout each project on this course. 
