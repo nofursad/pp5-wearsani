@@ -1,8 +1,8 @@
-<h1 align="center">WearSani - Genuine Quality Pashmina Scarves and Blankets</h1>
+<h1 align="center">WearSani - Genuine Quality Pashmina Scarves and Accessories</h1>
 
 [View the live project here](https://pp5-wearsani.herokuapp.com/)
 
-The WearSani project is a B2C e-commerce application which sells Pashmina scarves and blankets to end customers.  The site aims to present users with an attractive and intuitive online shopping experience and encourage return visits through features such as discounts, a newsletter, social media posts, and an easy to use user profile function to save customer details.
+The WearSani project is a B2C e-commerce application which sells Pashmina scarves and accessories to end customers.  The site aims to present users with an attractive and intuitive online shopping experience and encourage return visits through features such as discounts, a newsletter, social media posts, and an easy to use user profile function to save customer details.
 
 The site is implemented as a retail store where users can view, search and filter the products on offer, then select items to add to their shopping cart and purchase through a secure single payment.
 
@@ -206,7 +206,7 @@ The WearSani products application uses a B2C e-commerce model, selling directly 
 
 A GitHub Project with linked Issues was used as the Agile tool for this project.  User Stories with acceptance criteria were defined using GitHub Issues and development of code for these stories was managed using a Kanban board.  All of the User Stories were linked to 'parent' Epic issues to show how they all supported the over-arching goals of the project.
 
-The Epic, User Stories and Kanban board can be accessed here : [WearSani Agile Tool]<!-- (Link to project of github) -->
+The Epic, User Stories and Kanban board can be accessed here : [WearSani Agile Tool](https://github.com/nofursad/pp5-wearsani/projects/1)
 
 
 ## Technologies Used

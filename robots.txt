@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Sitemap: https://pp5-wearsani.herokuapp.com/sitemap.xml

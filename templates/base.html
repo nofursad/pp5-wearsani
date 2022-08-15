@@ -9,6 +9,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="SANI/WearSani brings genuine quality Pashmina scarves and blankets from Nepal. Our
+    products are hand woven by women using looms that preserve the natural softness of the
+    Pashmina wool. Our scarves are light yet unbelievably warm and very versatile.">
+  <meta name="keywords" 
+    content="Sani, Wearsani, saniwear, pashmina, scarves, scarf, accessories, pashmina swal,
+    hand woven pashmina, natural softness pashmina, pashmina wool, light weight pashmina, 
+    nepali pashmina, 100% pashmina, hand woven pashmina using looms">
   {% endblock %}
   {% block extra_meta %}
   {% endblock %}
@@ -45,7 +53,7 @@
   {% block extra_js %}
   {% endblock %}
 
-  <title>WearSANI | {% block extra_title%}{% endblock%}</title>
+  <title>WearSANI{% block extra_title%}{% endblock%}</title>
 </head>
 
 <body>
@@ -127,21 +135,21 @@
   </header>
 
   {% if messages %}
-    <div class="message-container">
-      {% for message in messages %}
-        {% with message.level as level %}
-          {% if level == 40 %}
-            {% include 'includes/toasts/toast_error.html' %}
-          {% elif level == 30 %}
-            {% include 'includes/toasts/toast_warning.html' %}
-          {% elif level == 25 %}
-            {% include 'includes/toasts/toast_success.html' %}
-          {% else %}
-            {% include 'includes/toasts/toast_info.html' %}
-          {% endif %}
-        {% endwith %}
-      {% endfor %}
-    </div>
+  <div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+  </div>
   {% endif %}
 
   {% block page_header %}
